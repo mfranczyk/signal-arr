@@ -27,3 +27,14 @@
 npm install signal-arr --save
 
 ```
+----------
+#### Notes
+
+The SignalR JS client currently uses jQuery for the following functions:
+
+* Custom events (on objects, not DOM elements)
+* Ajax (works on older IE, wrapped in promises, etc.)
+* Promises (deferred)
+* Misc. utilities
+
+SignalR issiue - [Rewrite JavaScript bindings to no longer depend on jQuery](https://github.com/SignalR/SignalR/issues/372)
